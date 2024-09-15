@@ -1,0 +1,22 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.top {
+    background-color: rgba(80, 80, 80, 0.50);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    user-select: none;
+}
+
+#copyright {
+    font-size: 17px;
+    color: black;
+}

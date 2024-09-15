@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'MC';
+    src: url('/ttf/MC.ttf');
+}
+
+body {
+    user-select: none;
+    cursor: url('/img/CNZW/cursor.png'), auto;
+}
+
+::selection {
+    background: rgb(0, 255, 0);
+    color: black;
+}
+
+#waifu-tips span {
+    font-family: 'MC';
+}
+
+footer {
+    user-select: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.center {
+    text-align: center;
+}
+
+strong {
+    color: red;
+}
+
+/*button style*/
+.button {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 0.75em 1em;
+    color: black;
+    border: 0.15em solid rgb(0, 255, 0);
+    transition: 4s;
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    top: -1.5em;
+    z-index: -1;
+    width: 200%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 40%;
+    background-color: rgba(0, 255, 255, 0.25);
+    transition: 4s;
+}
+
+.button:before {
+    left: -80%;
+    transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+
+.button:after {
+    right: -80%;
+    transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+
+.button:hover,
+.button:focus {
+    color: rgb(0, 255, 0);
+}
+
+.button:hover:before,
+.button:hover:after,
+.button:focus:before,
+.button:focus:after {
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.75);
+}

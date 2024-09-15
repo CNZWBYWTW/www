@@ -1,0 +1,31 @@
+/* ICP STYLE */
+.icp {
+    vertical-align: middle;
+    transition: 400ms;
+}
+
+/* ICP - EXAMPLE */
+/*
+#icp-example-icon {
+    width: 25px;
+}
+
+#icp-example-link {
+    text-decoration: none;
+    color: black;
+}
+
+#icp-examplae-code:hover {
+    color: rgb(0, 255, 0);
+    background-color: black;
+    border-radius: 3px;
+}
+*/
+/* HTML EXAMPLE
+<div id="icp-example" class="icp">
+    <img src="https://example.com/example.png" id="icp-example-icon" class="icp">
+    <a href="https://example.com/" target="_blank" id="icp-example-link" class="icp">
+        <span id="icp-example-code" class="icp">ICP备114514号</span>
+    </a>
+</div>
+*/
