@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CNZW</title>
+    <link rel="icon" href="/img/CNZW/TB.png">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/index-nb.css">
+    <script src="/js/all.js"></script>
+    <!--BGM-->
+    <audio id="bgm" preload autoplay loop>
+        <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/登录的小曲.ogg">
+        <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/登录的小曲.ogg">
+    </audio>
+    <!--BGM_S-->
+    <audio id="sbgm" preload loop>
+        <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/上厕所的小曲.mp3">
+        <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/上厕所的小曲.mp3">
+    </audio>
+</head>
+<!---->
+<script>
+    function getURL(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+</script>
+<!--background-->
+<style>
+    body{
+        background-image:
+            url('/img/CNZW/background-p.png'),
+            url('https://raw.bgithub.xyz/CNZWBYWTW/www/main/img/CNZW/background-p.png'), 
+            url('https://cdn.jsdelivr.net/gh/CNZWBYWTW/www/img/CNZW/background-p.png');
+    }
+</style>
+<!--发布页宽度适配-->
+<script>
+    function _p(){
+        document.querySelector("#cwpi").style = "width: 100%;";
+    }
+    function _c(){
+        document.querySelector("#cwpi").style = "";
+    }
+</script>
+
+<body
+    onclick="document.querySelector('#bgm').play();if(document.querySelector('#sbgm').paused == false){document.querySelector('#sbgm').pause();document.querySelector('#bgm').currentTime = 0;}">
+    <!--未启用或不支持JavaScript时显示页面-->
+    <noscript class="noscript">
+        <h2 class="noscript">
+            你的浏览器不支持或未启用JavaScript
+            <br>
+            请启用JavaScript后重新加载页面
+            <br>
+            <br>
+            <br>
+            <a id="help-javascript" class="button"
+                href="https://support.microsoft.com/zh-cn/office/%E5%90%AF%E7%94%A8-javascript-7bb9ee74-6a9e-4dd1-babf-b0a1bb136361">
+                获取更多帮助
+            </a>
+            <style>
+                #help-javascript {
+                    font-size: 17px;
+                    background-color: white;
+                    color: black;
+                    border-radius: 2em;
+                }
+
+                #help-javascript:hover {
+                    color: rgb(0, 255, 0);
+                }
+            </style>
+            <div class="noscript-link">
+                Powered&nbsp;by
+                <a href="https://github.com/CNZWBYWTW" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/CNZWBYWTW" class="noscript-avatar">
+                    <span class="MC">
+                        CNZWBYWTW
+                    </span>
+                </a>
+            </div>
+            <span class="copyright">
+                <b>
+                    Copyright&copy;&nbsp;by
+                    <a href="https://github.com/CNZWBYWTW" target="_blank" class="MC">
+                        CNZW
+                    </a>
+                    . All Right Reserved
+                </b>
+            </span>
+        </h2>
+        <style>
+            .noscript {
+                user-select: none;
+                position: fixed;
+                text-align: center;
+                z-index: 100;
+                background-color: rgb(50, 50, 50);
+                color: white;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .noscript a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .noscript-link {
+                margin-top: 50px;
+            }
+
+            .noscript-avatar {
+                background-color: black;
+                width: 20px;
+                border-radius: 50%;
+                margin-bottom: -2px;
+
+            }
+
+            .copyright {
+                font-size: 15px;
+            }
+
+            .MC {
+                font-family: 'MC';
+            }
+        </style>
+    </noscript>
+    <!--body-->
+    <!--header-->
+    <header class="top" name="top">
+        <h1 class="top">
+            <a href="/"><img src="/img/CNZW/CNZW.png" width="250px" title="CNZW" /></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/" title="index" id="index" class="top">首页</a>
+            <b class="top">|</b>
+            <a href="mailto:report@cnzw.us.kg?subject=反馈" id="mailto" class="top">反馈</a>
+            <b class="top">|</b>
+        </h1>
+    </header>
+    <!---->
+    <div class="body">
+        <div class="cwmg" onclick="window.open('https://bluearchive.jp/');">
+            <style>
+                .cwmg {
+                    height: 195px;
+                    width: 467px;
+                    background-size: 100%;
+                    background-position: center;
+                    display: inline-block;
+                    background-image: url("https://github-readme-stats.vercel.app/api?username=CNZWBYWTW&show_icons=true&theme=tokyonight");
+                }
+            </style>
+        </div>
+        <div class="stbbgm">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="stbgm button" onclick="sbgm()">更换BGM</button>
+            <script>
+                function sbgm() {
+                    setTimeout(function () {
+                        document.querySelector('#bgm').pause();
+                    }, 5)
+                    setTimeout(function () {
+                        document.querySelector('#sbgm').currentTime = 0;
+                        document.querySelector('#sbgm').play();
+                    }, 10)
+                }
+            </script>
+            <style>
+                .stbgm {
+                    border-radius: 2em;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 150%;
+                }
+            </style>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="cwp" onclick="window.open('https://github.com/CNZWBYWTW/');">
+            <img id="cwpi" src="/img/home.png">
+            <style>
+                .cwp img{
+                    max-width: 100%;
+                }
+            </style>
+        </div>
+        <style>
+            .body {
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.7);
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                border-radius: 5px;
+                border: 3px solid rgb(0, 255, 0);
+            }
+        </style>
+    </div>
+    <!---->
+    <!--footer-->
+    <footer id="footer">
+        <hr color="black" size="3" />
+        <a href="https://github.com/CNZWBYWTW/" target="_blank" title="GitHub:@CNZWBYWTW">
+            <img src="https://img.shields.io/badge/GitHub-CNZWBYWTW-black" alt="GitHub:@CNZWBYWTW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://space.bilibili.com/3493132140284888/" target="_blank" title="Bilibili:@CNZW">
+            <img src="https://img.shields.io/badge/Bilibili-CNZW-blue" alt="Bilibili:@CNZW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://x.com/CNZW_WTW" target="_blank" title="X:@CNZW_WTW">
+            <img src="https://img.shields.io/badge/X-CNZW__WTW-black" alt="X:@CNZW_WTW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://youtube.com/@CNZW-WTW" target="_blank" title="YouTube:@CNZW-WTW">
+            <img src="https://img.shields.io/badge/YouTube-CNZW--WTW-red" alt="YouTube:@CNZW-WTW">
+        </a>
+        <br>
+        <!--copyright-->
+        <b id="copyright">
+            Copyright&copy;&nbsp;2023-
+            <b id="Y">
+                114514
+            </b>
+            &nbsp;CNZW. All Right Reserved
+        </b>
+        <br>
+        <hr color="black" size="3" />
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("Y").innerHTML = currentYear;
+        </script>
+    </footer>
+</body>
+
+</html>
