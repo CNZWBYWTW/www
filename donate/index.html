@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Donate - CNZW</title>
+    <link rel="icon" href="/img/CNZW/TB.png">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/all.js"></script>
+    <script src="/js/bg.js"></script>
+    <script src="/js/live2d-widget/autoload.js"></script>
+    <!--BGM-->
+    <audio id="bgm" onload autoplay loop>
+        <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/unwelcome-school.ogg">
+        <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/unwelcome-school.ogg">
+    </audio>
+</head>
+
+<body
+    onclick="document.querySelector('#bgm').play();if(bgm.paused == false){console.log('BGM was successful to play!')}else{console.error('BGM wasn\u0027t successful to play!')};">
+    <!--未启用或不支持JavaScript时显示页面-->
+    <noscript class="noscript">
+        <h2 class="noscript">
+            你的浏览器不支持或未启用JavaScript
+            <br>
+            请启用JavaScript后重新加载页面
+            <br>
+            <br>
+            <br>
+            <a id="help-javascript" class="button"
+                href="https://support.microsoft.com/zh-cn/office/%E5%90%AF%E7%94%A8-javascript-7bb9ee74-6a9e-4dd1-babf-b0a1bb136361">
+                获取更多帮助
+            </a>
+            <style>
+                #help-javascript {
+                    font-size: 17px;
+                    background-color: white;
+                    color: black;
+                    border-radius: 2em;
+                }
+
+                #help-javascript:hover {
+                    color: rgb(0, 255, 0);
+                }
+            </style>
+            <div class="noscript-link">
+                Powered&nbsp;by
+                <a href="https://github.com/CNZWBYWTW" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/CNZWBYWTW" class="noscript-avatar">
+                    <span class="MC">
+                        CNZWBYWTW
+                    </span>
+                </a>
+            </div>
+            <span class="copyright">
+                <b>
+                    Copyright&copy;&nbsp;by
+                    <a href="https://github.com/CNZWBYWTW" target="_blank" class="MC">
+                        CNZW
+                    </a>
+                    . All Right Reserved
+                </b>
+            </span>
+        </h2>
+        <style>
+            .noscript {
+                user-select: none;
+                position: fixed;
+                text-align: center;
+                z-index: 100;
+                background-color: rgb(50, 50, 50);
+                color: white;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .noscript a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .noscript-link {
+                margin-top: 50px;
+            }
+
+            .noscript-avatar {
+                background-color: black;
+                width: 20px;
+                border-radius: 50%;
+                margin-bottom: -2px;
+
+            }
+
+            .copyright {
+                font-size: 15px;
+            }
+
+            .MC {
+                font-family: 'MC';
+            }
+        </style>
+    </noscript>
+    <!--body-->
+    <!--header-->
+    <header class="top" name="top">
+        <h1 class="top">
+            <a href="/"><img src="/img/CNZW/CNZW.png" width="250px" title="CNZW" /></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/" title="index" id="index" class="top">首页</a>
+            <b class="top">|</b>
+            <a href="mailto:report@cnzw.us.kg?subject=反馈" id="mailto" class="top">反馈</a>
+        </h1>
+    </header>
+    <!---->
+    <div id="body" name="body">
+        <h2 id="title">
+            <span id="title-0">免责声明:</span>
+            <br>
+            <span id="title-1">您在此页面对我们的所有支付均为对 <span class="CNZW">CNZW</span> 的捐赠，概不退还</span>
+            <style>
+                #title{
+                    width: 85%;
+                    color: red;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    display: inline-block;
+                    border-radius: 5px;
+                    border: 3px red solid;
+                }
+            </style>
+        </h2>
+        <br>
+        <div class="pay-qrcode">
+            <ruby>
+                <img id="WeChat" class="pqc"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAHqAQMAAADxo595AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAGUExURQAAAP///6XZn90AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMQSURBVHja7dxLjuMgEIDhknwAjuSr+0g+ABITUw/KcWbUMR6pFz8Ld4z5yAYBVTgtbaZscDgcDofD4fBfxcXKorWytiptK8eD47Luy3GRV+Pdm65w+CTvN01bLYaOi7Zfo8ujSRJw+AzvrfzZq7qjKvpAe5PovH+Cw5/jp0/WUfQBh/8PfizLr+rO+20VX6CtDg5/iPc/0WrzBr5K90X7p+s7HP4jbsWX4H9cvCkcPslHkRH9RvShG0Tpk+a5NRw+yftYfP2tFodoKVVHs02fuzWBw6f55nLsCH3RFq3TpXrz2RQOn+bNM8jKt1LzaLapsllscglG4PAbXOxUo+Y+LL/s7S0YOZ6Wt6kSDr/DLciIxEsZAcrlGM32i3D4HE/RR+exVKfF2OpyR3D4BNd5UHd/EgcaLdJ9qd/2KckMh9/hYzOYjtGWaHreDH5e3+Hwr7jfxLnFHtvCvjaXN3QJgeHwm1xrRn6v+FSZAt/dZlNZ4fA5fsol+1A97xJ1IKd3CeDwOd4iyad9WH6lpd7sa3rRyAUOn+U9v7L4BlHik8+XaQzbOQgcPsft8LY1iV9XWJKveICc66wxHD7FI8kcr4L69Gmj1DeI1h4On+aaUNbJsNqO0A7UovNin9pW4PAneAS5R+lVNkFGl5qH1tF8Wd/h8K/5x2dvv3NcP7weCofPcC35LKPlnLNE+6iDwyf5qgtvPV1EYm9YJX+D7w3h8AluOz2fFpXbVCky9ost5Zzh8Dnua27EIX6xun3sF6ucZk44/C7XdIvmXCSelRZ1nnPu37VexjwcfouPqNa4jLdVzg/aNfECh3/PbR7sU+BIMpeYFuNAw0qPV+DwKT6KJflSH83DYl+WtQc4fJKnwajPThFxGrR/ez0PDv+e95v0P3hi+Grixbu3QetN4PAp7mvzOLcYBxotvQofg3uFw5/iKfC1lwdOmb7IPsPhD3K7XTS/kqZPPd8YizYcPsubD9V0gjZ2hCI2VOHw57gVnyrtfXiREfO2fqoRwbCObjj8Pr9b4HA4HA6Hw+G/g7ftDwDYrnHrc9EnAAAAAElFTkSuQmCC">
+                <rt>微信支付 / WeChat Pay</rt>
+            </ruby>
+            <ruby>
+                <img id="QQ" class="pqc"
+                    src="data:image/png;base64,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">
+                <rt>QQ支付 / QQ Pay</rt>
+            </ruby>
+            <style>
+                .pay-qrcode {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: 85%;
+                    display: inline-block;
+                    border-radius: 5px;
+                    border: 3px rgb(0, 255, 0) solid;
+                }
+
+                .pay-qrcode ruby rt {
+                    color: black;
+                    background-color: white;
+                    font-size: 150%;
+                }
+                .pqc{
+                    width: 500px;
+                    height: 500px;
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                }
+            </style>
+        </div>
+    </div>
+    <br>
+    <style>
+        body {
+            user-select: none;
+        }
+
+        #body {
+            text-align: center;
+        }
+
+        .CNZW {
+            font-family: 'MC';
+        }
+    </style>
+    <!---->
+    <!--footer-->
+    <footer id="footer">
+        <hr color="black" size="3" />
+        <a href="https://github.com/CNZWBYWTW/" target="_blank" title="GitHub:@CNZWBYWTW">
+            <img src="https://img.shields.io/badge/GitHub-CNZWBYWTW-black" alt="GitHub:@CNZWBYWTW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://space.bilibili.com/3493132140284888/" target="_blank" title="Bilibili:@CNZW">
+            <img src="https://img.shields.io/badge/Bilibili-CNZW-blue" alt="Bilibili:@CNZW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://x.com/CNZW_WTW" target="_blank" title="X:@CNZW_WTW">
+            <img src="https://img.shields.io/badge/X-CNZW__WTW-black" alt="X:@CNZW_WTW">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://youtube.com/@CNZW-WTW" target="_blank" title="YouTube:@CNZW-WTW">
+            <img src="https://img.shields.io/badge/YouTube-CNZW--WTW-red" alt="YouTube:@CNZW-WTW">
+        </a>
+        <br>
+        <b id="copyright">
+            Copyright&copy; 2023-
+            <b id="Y">
+                114514
+            </b>
+            &nbsp;CNZW. All Right Reserved
+        </b>
+        <br>
+        <hr color="black" size="3" />
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("Y").innerHTML = currentYear;
+        </script>
+    </footer>
+</body>
+
+</html>
