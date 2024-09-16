@@ -8,8 +8,8 @@ fetch('https://api.cnzw.us.kg/background/bgw.json')
 
 setInterval(function () {
     if (innerWidth/innerHeight < tp) {
-        document.querySelector('body').style = "background-image: url('/img/CNZW/background-p.png'), url('https://raw.bgithub.xyz/CNZWSTUDIO/www/main/img/CNZW/background-p.png'), url('https://cdn.jsdelivr.net/gh/CNZWSTUDIO/www/img/CNZW/background-p.png');";
+        document.querySelector('body').style = "background-image: url('/img/CNZW/background-p.png'), url('https://raw.bgithub.xyz/CNZWBYWTW/www/main/img/CNZW/background-p.png'), url('https://cdn.jsdelivr.net/gh/CNZWBYWTW/www/img/CNZW/background-p.png');";
     } else {
-        document.querySelector('body').style = "background-image: url('/img/CNZW/background.png'), url('https://raw.bgithub.xyz/CNZWSTUDIO/www/main/img/CNZW/background.png'), url('https://cdn.jsdelivr.net/gh/CNZWSTUDIO/www/img/CNZW/background.png');";
+        document.querySelector('body').style = "background-image: url('/img/CNZW/background.png'), url('https://raw.bgithub.xyz/CNZWBYWTW/www/main/img/CNZW/background.png'), url('https://cdn.jsdelivr.net/gh/CNZWBYWTW/www/img/CNZW/background.png');";
     }
 });
