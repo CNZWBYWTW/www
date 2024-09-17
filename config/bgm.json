@@ -1,0 +1,9 @@
+{
+    "CDN_PATH": 2,
+    "CDN_PATH_1": "https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/",
+    "CDN_PATH_2": "https://raw.bgithub.xyz/CNZWBYWTW/audio/main/",
+
+    "BGM": 2,
+    "BGM_1": "登录的小曲.ogg",
+    "BGM_2": "上厕所的小曲.mp3"
+}
