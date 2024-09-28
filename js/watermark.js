@@ -10,7 +10,8 @@ setInterval(function () {
                 user-select: none;
                 position: fixed;
                 right: 10px;
-                bottom: 5px;            
+                bottom: 5px;
+                z-index: 2147483647;
             }
 
             @font-face {
