@@ -6,7 +6,7 @@ setInterval(function () {
         <style>
             #CNZW-watermark {
                 font-size: 30px;
-                color: #0000004d;
+                color: #00000026;
                 user-select: none;
                 position: fixed;
                 right: 10px;
@@ -20,7 +20,7 @@ setInterval(function () {
 
             .CNZW-link {
                 font-family: 'CNZW-link';
-                color: #0000004d;
+                color: #00000026;
                 text-decoration: none;
             }
         </style>
