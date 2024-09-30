@@ -15,11 +15,6 @@
         <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/登录的小曲.ogg">
         <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/登录的小曲.ogg">
     </audio>
-    <!--BGM_S-->
-    <audio id="sbgm" preload loop>
-        <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/上厕所的小曲.mp3">
-        <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/上厕所的小曲.mp3">
-    </audio>
 </head>
 <!---->
 <script>
@@ -30,15 +25,6 @@
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 </script>
-<!--background-->
-<style>
-    body{
-        background-image:
-            url('/img/CNZW/background-p.png'),
-            url('https://raw.bgithub.xyz/CNZWBYWTW/www/main/img/CNZW/background-p.png'), 
-            url('https://cdn.jsdelivr.net/gh/CNZWBYWTW/www/img/CNZW/background-p.png');
-    }
-</style>
 <!--发布页图片宽度适配-->
 <script>
     function _p(){
@@ -157,38 +143,11 @@
                 }
             </style>
         </div>
-        <div class="stbbgm">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button class="stbgm button" onclick="sbgm()">更换BGM</button>
-            <script>
-                function sbgm() {
-                    setTimeout(function () {
-                        document.querySelector('#bgm').pause();
-                    }, 5)
-                    setTimeout(function () {
-                        document.querySelector('#sbgm').currentTime = 0;
-                        document.querySelector('#sbgm').play();
-                    }, 10)
-                }
-            </script>
-            <style>
-                .stbgm {
-                    border-radius: 2em;
-                    text-align: center;
-                    display: inline-block;
-                    font-size: 150%;
-                }
-            </style>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="cwp" onclick="window.open('https://github.com/CNZWBYWTW/');">
             <img id="cwpi" src="/img/home.png">
             <style>
