@@ -6,12 +6,6 @@ function getURL(name) {
 }
 
 //Convert
-//Unicode
-function TextToUnicode(str) {
-    return str.split('').map(function (char) {
-        return '\\u' + char.charCodeAt(0).toString(16);
-    }).join('');
-}
 //ImageToBase64
 function ImageToBase64(url, callback) {
     fetch(url)
