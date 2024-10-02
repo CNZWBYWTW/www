@@ -73,13 +73,14 @@
         <br>
         <b id="copyright">
             Copyright&copy; 2023-
-            <b id="Y">114514</b>
+            <b id="CPY">
+                114514
+            </b>
             &nbsp;CNZW. All Right Reserved
         </b>
         <hr color="black" size="3" />
         <script>
-            var currentYear = new Date().getFullYear();
-            document.getElementById("Y").innerHTML = currentYear;
+            document.querySelector("#CPY").innerText = new Date().getFullYear();
         </script>
     </footer>
 </body>
