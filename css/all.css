@@ -30,3 +30,7 @@ footer {
 strong {
     color: red;
 }
+
+.hide {
+    display: none;
+}
