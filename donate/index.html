@@ -132,6 +132,10 @@
                 opacity: 0;
             }
 
+            #loading.hidden.hide {
+                display: none;
+            }
+
             #loading-t {
                 display: none;
             }
@@ -140,6 +144,9 @@
             document.querySelector("#loading-t").addEventListener("load", function () {
                 setTimeout(function () {
                     document.querySelector("#loading").className = "hidden";
+                    setTimeout(function () {
+                        document.querySelector("#loading").className = document.querySelector("#loading").className + " hide";
+                    }, 1000)
                 }, 4000)
             })
         </script>
