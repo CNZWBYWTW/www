@@ -11,10 +11,7 @@
     <script src="/js/bg.js"></script>
     <script src="/js/watermark.js"></script>
     <!--BGM-->
-    <audio id="bgm" preload autoplay loop>
-        <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/登录的小曲.ogg">
-        <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/登录的小曲.ogg">
-    </audio>
+    <audio id="bgm" preload autoplay loop></audio>
 </head>
 <!---->
 <script>
@@ -24,6 +21,27 @@
             results = regex.exec(location.search);
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
+</script>
+<!--BGM-->
+<script>
+    var BGM_list = {
+        1: "青空Magic_Day-日.m4a",
+        2: "正午天空的月亮.m4a",
+        3: "青春档案.m4a",
+        4: "晄轮大会的小曲.ogg",
+        5: "登录的小曲.ogg",
+        6: "unwelcome-school.ogg",
+        7: "優しさの記憶.m4a",
+        8: "青空Magic_Day-中.m4a"
+    };
+    var BGM_NAME = BGM_list[getRandomInt(1, Object.keys(BGM_list).length)];
+    document.querySelector("#bgm").innerHTML = `
+    <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/${BGM_NAME}">
+    <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/${BGM_NAME}">
+    `
+    setTimeout(function () {
+        document.querySelector('#bgm').play();
+    }, 500)
 </script>
 
 <body onclick="document.querySelector('#bgm').play();">
