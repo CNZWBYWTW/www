@@ -166,7 +166,11 @@
         </b>
         <hr color="black" size="3" />
         <script>
-            document.querySelector("#CPY").innerText = new Date().getFullYear();
+            setInterval(function () {
+                if (document.querySelector("#CPY").innerText != new Date().getFullYear()) {
+                    document.querySelector("#CPY").innerText = new Date().getFullYear();
+                }
+            })
         </script>
     </footer>
 </body>
