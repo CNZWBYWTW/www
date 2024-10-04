@@ -123,7 +123,7 @@
             <br>
             <span id="title-1">您在此页面对我们的所有支付均为对 <span class="CNZW">CNZW</span> 的捐赠，概不退还</span>
             <style>
-                #title{
+                #title {
                     width: 85%;
                     color: red;
                     background-color: rgba(255, 255, 255, 0.8);
@@ -159,7 +159,8 @@
                     background-color: white;
                     font-size: 150%;
                 }
-                .pqc{
+
+                .pqc {
                     width: 500px;
                     height: 500px;
                     margin-top: 50px;
@@ -211,14 +212,14 @@
         </b>
         <br>
         <hr color="black" size="3" />
-        <script>
-            setInterval(function () {
-                if (document.querySelector("#CPY").innerText != new Date().getFullYear()) {
-                    document.querySelector("#CPY").innerText = new Date().getFullYear();
-                }
-            })
-        </script>
     </footer>
+    <script>
+        setInterval(function () {
+            if (document.querySelector("#CPY").innerText != new Date().getFullYear()) {
+                document.querySelector("#CPY").innerText = new Date().getFullYear();
+            }
+        })
+    </script>
 </body>
 
 </html>
