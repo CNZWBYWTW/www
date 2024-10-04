@@ -98,53 +98,6 @@
             }
         </style>
     </noscript>
-    <!--loading-->
-    <div id="loading">
-        <img src="/img/CNZW/loading.gif" id="loading-t">
-        <style>
-            #loading {
-                background-image: url("/img/CNZW/loading.gif");
-                background-color: white;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-                background-attachment: fixed;
-                position: fixed;
-                z-index: 114514;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: all 1000ms;
-                opacity: 1;
-            }
-
-            #loading.hidden {
-                opacity: 0;
-            }
-
-            #loading.hidden.hide {
-                display: none;
-            }
-
-            #loading-t {
-                display: none;
-            }
-        </style>
-        <script>
-            document.querySelector("#loading-t").addEventListener("load", function () {
-                setTimeout(function () {
-                    document.querySelector("#loading").className = "hidden";
-                    setTimeout(function () {
-                        document.querySelector("#loading").className = document.querySelector("#loading").className + " hide";
-                    }, 1000)
-                }, 4000)
-            })
-        </script>
-    </div>
     <!--CNZW-->
     <div id="rbd"></div>
     <h3>
@@ -213,9 +166,7 @@
         </b>
         <hr color="black" size="3" />
         <script>
-            setInterval(function(){
-                document.querySelector("#CPY").innerText = new Date().getFullYear();
-            })
+            document.querySelector("#CPY").innerText = new Date().getFullYear();
         </script>
     </footer>
 </body>
