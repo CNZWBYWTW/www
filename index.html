@@ -156,10 +156,6 @@
                 opacity: 0;
             }
 
-            #loading.none {
-                display: none;
-            }
-
             #loading-v {
                 width: 100%;
                 height: 100vh;
@@ -175,7 +171,7 @@
                 if (document.querySelector("#loading-v").currentTime >= 3.9 & document.querySelector("#loading").className.startsWith("hidden") != true) {
                     document.querySelector("#loading").className = "hidden";
                     setTimeout(function () {
-                        document.querySelector("#loading").className += " none";
+                        document.querySelector("#loading").innerHTML = "";
                     }, 1000)
                 }
             })
