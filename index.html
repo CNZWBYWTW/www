@@ -34,7 +34,7 @@
     }, 500)
 </script>
 
-<body onclick="document.querySelector('#bgm').play();">
+<body>
     <!--CNZW-->
     <!--未启用或不支持JavaScript时显示页面-->
     <noscript class="noscript">
@@ -178,6 +178,15 @@
             <b class="top">|</b>
             <a href="mailto:report@cnzw.us.kg?subject=反馈" id="mailto" class="top">反馈</a>
             <b class="top">|</b>
+            <div class="top bgnm" onclick="document.querySelector('#bgm').play();">
+                <script>document.write(`当前的背景音乐是: ${BGM_NAME} (点击此处开始播放)`);</script>
+                <style>
+                    .bgnm{
+                        font-size: 0.5em;
+                        text-align: center;
+                    }
+                </style>
+            </div>
         </h1>
     </header>
     <!---->
