@@ -21,11 +21,9 @@
     <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/${BGM_NAME}">
     <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/${BGM_NAME}">
     `;
-    setInterval(function () {
-        if (document.querySelector('#bgm').paused == true) {
-            document.querySelector('#bgm').play();
-        }
-    })
+    setTimeout(function () {
+        document.querySelector('#bgm').play();
+    }, 500)
 </script>
 
 <body onclick="document.querySelector('#bgm').play();">
