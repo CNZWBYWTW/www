@@ -169,6 +169,18 @@
             <a href="/" title="index" id="index" class="top">首页</a>
             <b class="top">|</b>
             <a href="mailto:report@cnzw.us.kg?subject=反馈" id="mailto" class="top">反馈</a>
+            <div class="top bgnm" onclick="document.querySelector('#bgm').play();">
+                <script>document.write(`当前的背景音乐是: ${BGM_NAME} (点击此处开始播放)`);</script>
+                <style>
+                    .bgnm {
+                        font-size: 0.5em;
+                        text-align: center;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        background-color: black;
+                    }
+                </style>
+            </div>
         </h1>
     </header>
     <!---->
