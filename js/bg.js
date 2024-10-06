@@ -1,10 +1,5 @@
 //通过窗口比例更改背景图片
-var tp;
-fetch('https://api.cnzw.us.kg/background/bgw.json')
-    .then(response => response.json())
-    .then(data => {
-        tp = data.tp;
-    })
+var tp = 1.2;
 
 setInterval(function () {
     if (innerWidth/innerHeight < tp) {
