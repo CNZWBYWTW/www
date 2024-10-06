@@ -1,5 +1,4 @@
 [![CNZW](/img/home.png)](https://cnzw.us.kg/)
-[![CNZW Star](https://api.star-history.com/svg?repos=CNZWBYWTW/www&type=Date&theme=dark)](https://star-history.com/#CNZWBYWTW/www&Date)
 
 >[!NOTE]
 >为方便对站点进行管理, CNZW 会不固定时间对被封禁的IP地址进行解封, 出现误封请联系[report@cnzw.us.kg](mailto:report@cnzw.us.kg?subject=IP误封上报)
