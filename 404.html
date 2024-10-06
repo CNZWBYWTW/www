@@ -98,53 +98,6 @@
             }
         </style>
     </noscript>
-    <!--loading-->
-    <div id="loading">
-        <video id="loading-v" preload muted autoplay>
-            <source src="https://webusstatic.yo-star.com/bluearchive_jp_web/media/transition.e0bc60a3.mp4">
-        </video>
-        <style>
-            #loading {
-                position: fixed;
-                background-color: white;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                z-index: 1919810;
-                opacity: 1;
-                transition: 1000ms;
-            }
-
-            #loading.hidden {
-                opacity: 0;
-            }
-
-            #loading.none {
-                display: none;
-            }
-
-            #loading-v {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        </style>
-        <script>
-            setInterval(function () {
-                if (document.querySelector("#loading-v").currentTime >= 3.9 & document.querySelector("#loading").className.startsWith("hidden") != true) {
-                    document.querySelector("#loading").className = "hidden";
-                    setTimeout(function () {
-                        document.querySelector("#loading").className += " none";
-                    }, 1000)
-                }
-            })
-        </script>
-    </div>
     <!--CNZW-->
     <div id="rbd"></div>
     <h3>
