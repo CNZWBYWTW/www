@@ -18,8 +18,7 @@
 <script>
     var BGM_NAME = BGM_list[getRandomInt(1, Object.keys(BGM_list).length)];
     document.querySelector("#bgm").innerHTML = `
-    <source src="https://raw.bgithub.xyz/CNZWBYWTW/audio/main/${BGM_NAME}">
-    <source src="https://cdn.jsdelivr.net/gh/CNZWBYWTW/audio/${BGM_NAME}">
+    <source src="https://audio.cnzw.us.kg/${BGM_NAME}">
     `;
     console.log(BGM_NAME);
     setTimeout(function () {
