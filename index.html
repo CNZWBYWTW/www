@@ -213,11 +213,18 @@
         <script>
             function _p() {
                 document.querySelector("#background").style = "display: none;";
+                console.log("竖屏, 自动切换壁纸")
             }
             function _c() {
                 document.querySelector("#background").style = "";
+                console.log("横屏, 自动切换壁纸")
             }
             setInterval(function () {
+                if (innerWidth / innerHeight < 1.2) {
+                    document.querySelector("#background").style = "display: none;";
+                } else {
+                    document.querySelector("#background").style = "";
+                }
                 if (document.querySelector('#background-video').paused) {
                     document.querySelector('#background-video').play();
                 }
