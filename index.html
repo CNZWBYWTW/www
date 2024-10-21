@@ -217,6 +217,11 @@
             function _c() {
                 document.querySelector("#background").style = "";
             }
+            setInterval(function () {
+                if (document.querySelector('#background-video').paused) {
+                    document.querySelector('#background-video').play();
+                }
+            })
         </script>
     </div>
     <!--header-->
