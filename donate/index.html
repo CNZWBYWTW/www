@@ -19,14 +19,17 @@
 </head>
 <!--BGM-->
 <script>
-    var BGM_NAME = BGM_list[getRandomInt(1, Object.keys(BGM_list).length)];
     document.querySelector("#bgm").innerHTML = `
-    <source src="https://audio.cnzw.us.kg/${BGM_NAME}">
+    <source src="${BGM_URL}">
     `;
-    console.log(BGM_NAME);
-    setTimeout(function () {
+    document.querySelector("#bgm").onloadeddata = function () {
+        console.table({
+            'BGM_HOST': BGM_HOST,
+            'BGM': BGM_NAME,
+            'TIME': `${document.querySelector('#bgm').duration}s`
+        });
         document.querySelector('#bgm').play();
-    }, 500)
+    };
 </script>
 
 <body>
