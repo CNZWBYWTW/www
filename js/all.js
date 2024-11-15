@@ -57,3 +57,12 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+//LoadCSS
+function loadCSS(href) {
+    var cssLink = document.createElement("link");
+    cssLink.rel = "stylesheet";
+    cssLink.type = "text/css";
+    cssLink.href = href;
+    document.getElementsByTagName("head")[0].appendChild(cssLink);
+}
