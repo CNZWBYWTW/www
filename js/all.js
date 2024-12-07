@@ -66,3 +66,16 @@ function loadCSS(href) {
     cssLink.href = href;
     document.getElementsByTagName("head")[0].appendChild(cssLink);
 }
+
+//Pi
+function getPi(pij) {
+    let pi = 0;
+    let denominator = 1;
+    let sign = 1;
+    for (let i = 0; i < pij; i++) {
+        pi += sign / denominator;
+        denominator += 2;
+        sign *= -1;
+    }
+    return pi * 4;
+}
