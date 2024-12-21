@@ -42,7 +42,7 @@ strong {
 
 @keyframes noise-anim {
     0% {
-        clip: rect(73px, 9999px, 15px, 0);
+        clip: rect(486px, 9999px, 777px, 0);
     }
 
     5% {
