@@ -35,9 +35,8 @@ strong {
 
 /*ERROR_TEXT*/
 .error-text {
-    font-size: 100px;
+    width: max-content;
     position: relative;
-    width: 400px;
     margin: 0 auto;
 }
 
