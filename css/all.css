@@ -36,6 +36,7 @@ strong {
 /*ERROR_TEXT*/
 .error-text {
     width: max-content;
+    height: max-content;
     position: relative;
 }
 
@@ -281,5 +282,7 @@ strong {
 }
 
 .shaking-text {
+    width: max-content;
+    height: max-content;
     animation: shake 500ms infinite;
 }
