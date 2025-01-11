@@ -281,7 +281,7 @@ strong {
     }
 }
 
-.shaking-text {
+.shaking {
     width: max-content;
     height: max-content;
     animation: shake 500ms infinite;
