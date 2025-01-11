@@ -233,4 +233,53 @@ strong {
     animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
-/*ERROR_TEXT*/
+/*SHAKING_TEXT*/
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-1%, 2%);
+    }
+
+    20% {
+        transform: translate(-1%, -2%);
+    }
+
+    30% {
+        transform: translate(1%, 2%);
+    }
+
+    40% {
+        transform: translate(1%, -2%);
+    }
+
+    50% {
+        transform: translate(-1%, 2%);
+    }
+
+    60% {
+        transform: translate(-1%, -2%);
+    }
+
+    70% {
+        transform: translate(1%, 2%);
+    }
+
+    80% {
+        transform: translate(1%, -2%);
+    }
+
+    90% {
+        transform: translate(-1%, 2%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.shaking-text {
+    animation: shake 500ms infinite;
+}
