@@ -87,14 +87,14 @@ function checkEmail(email) {
 }
 
 /*spectrum*/
-function spectrum(media_id, canvas_id) {
+function spectrum(media_s, canvas_s) {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const audioElement = document.getElementById(media_id);
+    const audioElement = document.querySelector(media_s);
     const source = audioContext.createMediaElementSource(audioElement);
     const analyser = audioContext.createAnalyser();
     source.connect(analyser);
     analyser.connect(audioContext.destination);
-    const canvas = document.getElementById(canvas_id);
+    const canvas = document.querySelector(canvas_s);
     const ctx = canvas.getContext('2d');
     const dataArray = new Uint8Array(analyser.frequencyBinCount);
     const renderFrame = () => {
@@ -115,14 +115,14 @@ function spectrum(media_id, canvas_id) {
     };
     renderFrame();
 }
-function spectrum_url(media_url, canvas_id) {
+function spectrum_url(media_url, canvas_s) {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const audioElement = new Audio(media_url);
     const source = audioContext.createMediaElementSource(audioElement);
     const analyser = audioContext.createAnalyser();
     source.connect(analyser);
     analyser.connect(audioContext.destination);
-    const canvas = document.getElementById(canvas_id);
+    const canvas = document.querySelector(canvas_s);
     const ctx = canvas.getContext('2d');
     const dataArray = new Uint8Array(analyser.frequencyBinCount);
     const renderFrame = () => {
