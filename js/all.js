@@ -144,3 +144,19 @@ function spectrum_url(media_url, canvas_s) {
     renderFrame();
     audioElement.play();
 }
+
+/*Get_UTC_Time*/
+function UTC() {
+    date = new Date();
+    function padZero(num) {
+        return num < 10 ? '0' + num : num;
+    };
+    return (
+        date.getUTCFullYear() + '-' +
+        padZero(date.getUTCMonth() + 1) + '-' +
+        padZero(date.getUTCDate()) + ' ' +
+        padZero(date.getUTCHours()) + ':' +
+        padZero(date.getUTCMinutes()) + ':' +
+        padZero(date.getUTCSeconds()) + ' UTC'
+    );
+}
