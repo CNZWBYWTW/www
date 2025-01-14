@@ -5,8 +5,8 @@ function getURL(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-//Convert
-//ImageToBase64
+/* Convert */
+/* ImageToBase64 */
 function ImageToBase64(url, callback) {
     fetch(url)
         .then(response => response.blob())
@@ -20,7 +20,7 @@ function ImageToBase64(url, callback) {
         .catch(error => console.error('Error converting image to base64:', error));
 }
 
-//C-P
+/* C-P */
 const wh = 1.2;
 var c_,
     p_;
@@ -29,36 +29,36 @@ setInterval(function () {
     let whl = innerWidth / innerHeight;
     if (whl < wh) {
         cp = 'p';
-        p();
+        _p();
     } else {
         cp = 'c';
-        c();
+        _c();
     }
 })
 
-function c() {
+function _c() {
     if (c_ != 'CNZW') {
         c_ = 'CNZW',
             p_ = '';
-        _c();
+        __c__();
     }
 }
-function p() {
+function _p() {
     if (p_ != 'CNZW') {
         p_ = 'CNZW',
             c_ = '';
-        _p();
+        __p__();
     }
 }
 
-//RandomInt
+/* RandomInt */
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//LoadCSS
+/* LoadCSS */
 function loadCSS(href) {
     var cssLink = document.createElement("link");
     cssLink.rel = "stylesheet";
@@ -67,7 +67,7 @@ function loadCSS(href) {
     document.getElementsByTagName("head")[0].appendChild(cssLink);
 }
 
-//Pi
+/* getPi */
 function getPi(pij) {
     let pi = 0;
     let denominator = 1;
@@ -80,13 +80,13 @@ function getPi(pij) {
     return pi * 4;
 }
 
-/*validateEmail*/
-function checkEmail(email) {
+/* validateEmail */
+function check_Email(email) {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
 }
 
-/*spectrum*/
+/* spectrum */
 function spectrum(media_s, canvas_s) {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const audioElement = document.querySelector(media_s);
@@ -145,7 +145,7 @@ function spectrum_url(media_url, canvas_s) {
     audioElement.play();
 }
 
-/*Get_UTC_Time*/
+/* Get_UTC_Time */
 function UTC() {
     date = new Date();
     function padZero(num) {
@@ -159,4 +159,19 @@ function UTC() {
         padZero(date.getUTCMinutes()) + ':' +
         padZero(date.getUTCSeconds()) + ' UTC'
     );
+}
+
+/* check h-captcha token */
+function check_hcaptcha_token(token) {
+    fetch("//host-1.cnzw.us.kg/api/check-hcaptcha-token.php", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: `token=${token}`
+    })
+        .then(response => response.json())
+        .then(data => {
+            return data;
+        })
 }
