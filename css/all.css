@@ -16,15 +16,6 @@ body {
     font-family: 'MC';
 }
 
-footer {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.center {
-    text-align: center;
-}
-
 strong {
     color: red;
 }
