@@ -3,25 +3,13 @@
     src: url('/ttf/MC.ttf');
 }
 
-body {
-    cursor: url('/img/CNZW/cursor.png'), auto;
-}
-
 ::selection {
     background: rgb(0, 255, 0);
     color: black;
 }
 
-#waifu-tips span {
-    font-family: 'MC';
-}
-
 strong {
     color: red;
-}
-
-.hide {
-    display: none;
 }
 
 /*ERROR_TEXT*/
