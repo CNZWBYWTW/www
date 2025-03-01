@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>403 / 404 - CNZW</title>
+    <link rel="icon" href="/img/CNZW/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/background.css">
+    <script src="/js/all.js"></script>
+</head>
+
+<body>
+    <!--CNZW-->
+    <!--未启用或不支持JavaScript时显示页面-->
+    <noscript class="noscript">
+        <h2 class="noscript">
+            你的浏览器不支持或未启用JavaScript
+            <br>
+            请启用JavaScript后重新加载页面
+            <br>
+            <br>
+            <br>
+            <a id="help-javascript"
+                href="https://support.microsoft.com/zh-cn/office/%E5%90%AF%E7%94%A8-javascript-7bb9ee74-6a9e-4dd1-babf-b0a1bb136361">
+                获取更多帮助
+            </a>
+            <style>
+                #help-javascript {
+                    font-size: 17px;
+                    color: black;
+                    border: 5px solid red;
+                    border-radius: 5px;
+                }
+
+                #help-javascript:hover {
+                    color: rgb(0, 255, 0);
+                }
+            </style>
+            <div class="noscript-link">
+                Powered&nbsp;by
+                <a href="https://github.com/CNZWBYWTW" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/CNZWBYWTW" class="noscript-avatar">
+                    <span class="MC">
+                        CNZWBYWTW
+                    </span>
+                </a>
+            </div>
+            <span class="copyright">
+                <b>
+                    Copyright&copy;&nbsp;by
+                    <a href="https://github.com/CNZWBYWTW" target="_blank" class="MC">
+                        CNZW
+                    </a>
+                    . All Right Reserved
+                </b>
+            </span>
+        </h2>
+        <style>
+            .noscript {
+                user-select: none;
+                position: fixed;
+                text-align: center;
+                z-index: 114514;
+                background-color: rgb(50, 50, 50);
+                color: white;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .noscript a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .noscript-link {
+                margin-top: 50px;
+            }
+
+            .noscript-avatar {
+                background-color: black;
+                width: 20px;
+                border-radius: 50%;
+                margin-bottom: -2px;
+
+            }
+
+            .copyright {
+                font-size: 15px;
+            }
+
+            .MC {
+                font-family: 'MC';
+            }
+        </style>
+    </noscript>
+    <!--CNZW-->
+    <div id="rbd"></div>
+    <h3>
+        <a href="/" class="til" title="HOME">HOME</a>
+        <span>&nbsp;>&nbsp;</span>
+        <a href="/404.html" class="til" title="404.html">404.html</a>
+    </h3>
+    <main class="wide">
+        <article class="wide">
+            <h1 class="wm-h1 not-found"><span _msttexthash="4124315" _msthash="79">
+                    403
+                    <i _istranslated="1">/</i>
+                    404
+                </span>
+            </h1>
+            <p class="h1-after">
+                <small _msttexthash="46703332" _msthash="131">
+                    403 禁止访问 / 404 找不到文件
+                    <br>
+                    <br>
+                    403 Forbidden / 404 File Not Found
+                </small>
+            </p>
+            <p>
+                <em _msttexthash="122894824" _msthash="81">用户指定的URL（地址）不包含可查看的文件。</em>
+            </p>
+            <p _msttexthash="34383427" _msthash="82">可能的原因包括：</p>
+            <div class="wm-background">
+                <ul class="wm-list">
+                    <li _msttexthash="346576776" _msthash="83">文件已被移动、重命名或删除（对于限时网站等，该文件已在期限结束后删除）</li>
+                    <li _msttexthash="22722154" _msthash="84">指定的 URL 不正确</li>
+                    <li _msttexthash="64735957" _msthash="85">您正在尝试访问受限制的文件。</li>
+                    <li _msttexthash="64735957" _msthash="86">您所使用的IP地址或所在的地区受到访问限制</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <h4 id="error-url">
+        <span id="url"></span>
+    </h4>
+    <h3 id="pw">Powered by <a href="https://github.com/CNZWBYWTW/" target="_blank" id="pwl">CNZW</a></h3>
+    <footer id="footer">
+        <hr color="black" size="3" />
+        <b id="copyright">
+            Copyright&copy; 2023-
+            <b id="CPY">
+                114514
+            </b>
+            &nbsp;CNZW. All Right Reserved
+        </b>
+        <hr color="black" size="3" />
+        <script>
+            document.querySelector("#CPY").innerText = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+<script>
+    var url = document.getElementById('url');
+    url.innerText = '错误的URL: [ ' + location + ' ]';
+    if (location.href.endsWith('404.html')) {
+        url.innerText = '';
+    }
+</script>
+<style>
+    #rbd {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .wm-list {
+        border-color: red;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .wide {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1vw;
+    }
+
+    #pw {
+        font-size: 50px;
+        background: linear-gradient(to right,
+                rgb(33, 136, 255) 0%,
+                rgb(128, 78, 218) 100%);
+        background-clip: text;
+        color: transparent;
+    }
+
+    #pwl {
+        font-size: 50px;
+        text-decoration: none;
+        font-family: 'MC';
+        color: transparent;
+    }
+
+    #pwl:hover {
+        border:
+            5px #007bff solid;
+        border-radius: 10px;
+    }
+
+    .til {
+        text-decoration: none;
+        color: black;
+    }
+
+    #url {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    h3 {
+        text-align: center
+    }
+
+    h4 {
+        text-align: center
+    }
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&amp;display=swap');
+
+    article .wm-h1.not-found {
+        background: none;
+        border: none;
+        color: #999;
+        font-family: "Rajdhani", sans-serif;
+        font-size: min(24vw, 1400%);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+        margin: 20px 0 0;
+        padding: .3em 0 0;
+    }
+
+    article .wm-h1.not-found span {
+        display: inline-block;
+        color: #333;
+        letter-spacing: -.03em
+    }
+
+    article .wm-h1.not-found span i {
+        font-style: normal;
+        margin: 0 -.08em 0 0em;
+    }
+
+    article .wm-h1.not-found:before,
+    article .wm-h1.not-found:after {
+        display: none !important;
+    }
+
+    article .wm-h1.not-found+.h1-after {
+        margin: 0;
+        padding: 0 0 3em;
+    }
+
+    article .wm-h1.not-found+.h1-after small {
+        display: block;
+        font-size: min(3.6vw, 200%);
+        font-weight: bold;
+        line-height: 1;
+        border: 1px solid #ccc;
+        border-width: 1px 0;
+        margin: 0;
+        padding: .5em 0;
+        text-align: center;
+    }
+
+    article .wm-background {
+        border-color: rgb(223 79 97);
+        color: rgb(223 79 97);
+    }
+
+    article .wm-background ul.wm-list>li:before {
+        background-color: rgb(223 79 97);
+        border-color: rgb(223 79 97);
+    }
+
+    ul.wm-list.recommend_link>li {
+        position: relative;
+        padding: 0 0 0 1.8em;
+    }
+
+    ul.wm-list.recommend_link>li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1.4em;
+        height: 1.4em;
+        background: url(/common/tmpl/images/icon-set/ico_arrow.svg) no-repeat center center / contain;
+        border: none;
+        top: .25em;
+        left: 0;
+        opacity: .75;
+    }
+
+    ul.wm-list.recommend_link>li a {
+        display: inline-block;
+        margin-left: 2.5em;
+        position: relative;
+    }
+
+    ul.wm-list.recommend_link>li a:after {
+        content: "・";
+        color: #333;
+        text-shadow: .4em 0 0 #333, -.4em 0 0 #333;
+        position: absolute;
+        right: calc(100% + 1em);
+        top: 0;
+    }
+
+    @media (max-width: 800px) {
+        ul.wm-list.recommend_link>li+li {
+            margin-top: 1em
+        }
+
+        ul.wm-list.recommend_link>li a {
+            display: block;
+            margin-left: 0;
+        }
+
+        ul.wm-list.recommend_link>li a:after {
+            display: none;
+        }
+    }
+
+    #lNav,
+    .contentsMenu {
+        display: none !important;
+    }
+</style>
+
+</html>
